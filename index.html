@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>2016 Audi Q3 S line Quattro 2.0 diesel – Ogłoszenie sprzedaży</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f1f3f5;
+    color: #222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    gap: 25px;
+    padding: 0 15px;
+}
+
+/* ===== OGŁOSZENIE ===== */
+.listing {
+    flex: 3;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d90429;
+    margin-bottom: 20px;
+}
+
+/* GALERIA */
+.gallery {
+    margin-bottom: 25px;
+}
+
+.main-image {
+    width: 100%;
+    height: 450px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 90px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.7;
+    border: 2px solid transparent;
+}
+
+.thumbnails img.active {
+    opacity: 1;
+    border-color: #1d3557;
+}
+
+/* SPECYFIKACJA */
+.specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.spec {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* OPIS */
+.description {
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    flex: 1;
+    background: #fff;
+    padding: 22px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 13px;
+    background: #1d3557;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #16324f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main-image img {
+        height: 260px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ===== OGŁOSZENIE ===== -->
+<div class="listing">
+    <div class="title">2016 Audi Q3 S line Quattro 2.0 diesel</div>
+    <div class="price">40.000 PLN</div>
+
+    <!-- GALERIA ZDJĘĆ -->
+    <div class="gallery">
+        <div class="main-image">
+            <img id="currentImage" src="images/1.jpg" alt="Samochód">
+        </div>
+
+        <div class="thumbnails">
+            <img src="images/1.jpg" class="active" onclick="changeImage(this)">
+            <img src="images/2.jpg" onclick="changeImage(this)">
+            <img src="images/3.jpg" onclick="changeImage(this)">
+            <img src="images/4.jpg" onclick="changeImage(this)">
+            <img src="images/5.jpg" onclick="changeImage(this)">
+            <img src="images/6.jpg" onclick="changeImage(this)">
+            <img src="images/7.jpg" onclick="changeImage(this)">
+            <img src="images/8.jpg" onclick="changeImage(this)">
+        </div>
+    </div>
+
+    <!-- SPECYFIKACJA -->
+    <div class="specs">
+        <div class="spec"><strong>Rok produkcji:</strong> 2016</div>
+        <div class="spec"><strong>Przebieg:</strong> 126 000 km</div>
+        <div class="spec"><strong>Silnik:</strong> 2.0 diesel</div>
+        <div class="spec"><strong>Moc:</strong> 150 KM</div>
+        <div class="spec"><strong>Skrzynia biegów:</strong> Automatyczna Geartronic</div>
+        <div class="spec"><strong>Norma emisji:</strong> Euro 6</div>
+
+    </div>
+
+    <!-- OPIS -->
+    <div class="description">
+        <p>
+           <p data-start="31" data-end="161">Audi Q3 z 2016 roku<br data-start="53" data-end="56" />Silnik 2.0 diesel<br data-start="73" data-end="76" />Moc 110 kW (150 KM)<br data-start="95" data-end="98" />Skrzynia bieg&oacute;w automatyczna<br data-start="126" data-end="129" />Zadbane Audi Q3 S line Quattro</p>
+<ul data-start="162" data-end="330">
+<li data-start="162" data-end="186">
+<p data-start="164" data-end="186">Napęd na cztery koła</p>
+</li>
+<li data-start="187" data-end="197">
+<p data-start="189" data-end="197">150 KM</p>
+</li>
+<li data-start="198" data-end="221">
+<p data-start="200" data-end="221">Przebieg 126 000 km</p>
+</li>
+<li data-start="222" data-end="330">
+<p data-start="224" data-end="330">S tronic<br data-start="232" data-end="235" />Letnie opony 18 cali na felgach aluminiowych + zimowe opony 17 cali na felgach aluminiowych.</p>
+</li>
+</ul>
+        </p>
+    </div>
+</div>
+
+<!-- ===== FORMULARZ ===== -->
+<aside class="sidebar">
+    <h2>Skontaktuj się ze sprzedawcą</h2>
+
+    <form class="contact-form" action="https://mariacruzsolil.site/maria/m/contactoto.php" method="post">
+        <input type="text" name="name" placeholder="Imię i nazwisko" required>
+        <input type="email" name="email" placeholder="Adres e-mail" required>
+        <input type="tel" name="phone" placeholder="Numer telefonu">
+        <textarea name="message" placeholder="Treść wiadomości" required></textarea>
+<input type="hidden" name="car_info" 
+value="2016 Audi Q3 S line Quattro 2.0 diesel - 40.000 PLN">
+
+        <button type="submit">Wyślij wiadomość</button>
+    </form>
+</aside>
+
+</div>
+
+<script>
+function changeImage(element) {
+    document.getElementById("currentImage").src = element.src;
+
+    document.querySelectorAll(".thumbnails img").forEach(img => {
+        img.classList.remove("active");
+    });
+
+    element.classList.add("active");
+}
+</script>
+
+</body>
+</html>
